@@ -7,7 +7,7 @@
 <head>
 <meta charset="UTF-8">
 
-  <title>Fornite Webservice </title>
+  <title>Fornite Webservice</title>
 </head>
 <body>
 
@@ -33,7 +33,7 @@ if(isset($_POST['pseudo']) && isset($_POST['platform'])){
   curl_setopt($ch, CURLOPT_HEADER, FALSE);
   curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, FALSE);
   curl_setopt($ch, CURLOPT_HTTPHEADER, array(
-      'TRN-Api-Key: b8822cb4-20ff-4868-a704-46173e32c106'
+      'TRN-Api-Key: '
   ));
   $response = curl_exec($ch);
   curl_close($ch);
