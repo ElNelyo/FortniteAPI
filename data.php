@@ -9,7 +9,7 @@ if(isset($_POST['pseudo']) && isset($_POST['platform'])){
   curl_setopt($ch, CURLOPT_HEADER, FALSE);
   curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, FALSE);
   curl_setopt($ch, CURLOPT_HTTPHEADER, array(
-      'TRN-Api-Key: b8822cb4-20ff-4868-a704-46173e32c106'
+      'TRN-Api-Key:'
   ));
   $response = curl_exec($ch);
   curl_close($ch);
@@ -19,7 +19,7 @@ if(isset($_POST['pseudo']) && isset($_POST['platform'])){
   $string = file_get_contents("stats.json");
   $json_a = json_decode($string, true);
 
-  print_r($json_a);
+  //print_r($json_a);
 }
 
 ?>
@@ -53,8 +53,13 @@ if(isset($_POST['pseudo']) && isset($_POST['platform'])){
   <h1> <?php echo $json_a['epicUserHandle'];?></h1>
 
   <h2>SOLO</h2>
-  <p>TOP1 : <?php echo $json_a['epicUserHandle']['stats']['p2']['top1'];?> </p>
+  <p>TOP1 : <?php echo $json_a['stats']['p2']['top1']['value'];?> </p>
 
+  <h2>DUO</h2>
+  <p>TOP1 : <?php echo $json_a['stats']['p10']['top1']['value'];?> </p>
+
+  <h2>SQUAD</h2>
+  <p>TOP1 : <?php echo $json_a['stats']['p9']['top1']['value'];?> </p>
 </body>
 
 </html>
