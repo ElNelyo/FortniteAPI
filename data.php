@@ -49,22 +49,27 @@ if(isset($_POST['pseudo']) && isset($_POST['platform'])){
   <link rel="stylesheet" type="text/css" href="css/main.css">
 <!--===============================================================================================-->
 </head>
-<div class="bg-contact2" style="background-image: url('images/bg-02.jpg');">
 <body>
-
+  <div class="bg-contact2" style="background-image: url('images/bg-02.jpg');height: 100%;">
+  <div class="container-contact2">
+  <div class="wrap-contact2">
   <h1> <?php if(isset($json_a['epicUserHandle']) ){echo $json_a['epicUserHandle'];}else{echo'Introuvable...';};?></h1>
-
-  <h2>SOLO</h2>
-  <p>TOP1 : <?php if(isset($json_a['stats']['p2']['top1']['value'])){ echo $json_a['stats']['p2']['top1']['value'];}else{echo '0';}?> </p>
-
-  <h2>DUO</h2>
-  <p>TOP1 : <?php if(isset($json_a['stats']['p10']['top1']['value'])){ echo $json_a['stats']['p10']['top1']['value'];}else{echo '0';}?> </p>
-
-  <h2>SQUAD</h2>
-  <p>TOP1 : <?php if(isset($json_a['stats']['p9']['top1']['value'])){ echo $json_a['stats']['p9']['top1']['value'];}else{echo '0';}?> </p>
-
-
-</body>
+  </br>
+  <form class="contact2-form validate-form">
+    <h2>SOLO</h2>
+    <p>TOP 1 : <?php if(isset($json_a['stats']['p2']['top1']['value'])){ echo $json_a['stats']['p2']['top1']['value'];}else{echo '0';}?> </p>
+    <h2>DUO</h2>
+    <p>TOP 1 : <?php if(isset($json_a['stats']['p10']['top1']['value'])){ echo $json_a['stats']['p2']['top1']['value'];}else{echo '0';}?> </p>
+    <h2>SQUAD</h2>
+    <p>TOP 1 : <?php if(isset($json_a['stats']['p9']['top1']['value'])){ echo $json_a['stats']['p2']['top1']['value'];}else{echo '0';}?> </p>
+    <div class="container-contact2-form-btn">
+			<div class="wrap-contact2-form-btn">
+				<div class="contact2-form-bgbtn"></div>
+          <button class="contact2-form-btn"><a href="index.php">RETOUR</a></button>
+        </div>
+      </div>
+  </form>
 </div>
-
+</div>
+</div>
 </html>
