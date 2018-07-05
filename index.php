@@ -34,7 +34,7 @@
           <span class="contact2-form-title">
   					Saisissez votre pseudo Fortnite
   				</span>
-          <div class="wrap-input2 validate-input" data-validate="Name is required">
+          <div class="wrap-input2 validate-input" data-validate="Le pseudo est requis">
             <input type="text" class="input2" placeholder="" name="pseudo" required="required">
             <span class="focus-input2" data-placeholder="PSEUDO"></span>
           </div>
@@ -55,10 +55,3 @@
       </div>
     </div>
   </div>
-
-
-<?php
-
-
-
-?>
