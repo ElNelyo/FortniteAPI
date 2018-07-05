@@ -1,6 +1,4 @@
 
-
-
 <!DOCTYPE html>
 <html>
 <html lang="fr">
@@ -8,19 +6,48 @@
 <meta charset="UTF-8">
 
   <title>Fornite Webservice</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->
+  <link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="css/util.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
 </head>
 <body>
 
-<h1>Fortnite Webservice</h1>
-<form method="post" action="#">
-<input type="text" placeholder="Pseudo" name="pseudo">
-<select name="platform">
-<option value='xbox'>XBOX</option>
-<option value="pc">PC</option>
-<option value="ps4">PS4</option>
-</select>
-<input type="submit" value="Rechercher">
-</form>
+  <div class="bg-contact2" style="background-image: url('images/bg-01.jpg');">
+  		<div class="container-contact2">
+  			<div class="wrap-contact2">
+        <form method="post" action="#" class="contact2-form validate-form">
+          <span class="contact2-form-title">
+  					Fortnite Web Service
+  				</span>
+          <span class="contact2-form-title">
+  					Saisissez votre pseudo Fortnite
+  				</span>
+          <input type="text" placeholder="Nelyo" name="pseudo">
+          <select name="platform">
+          <option value='xbox'>XBOX</option>
+          <option value="pc">PC</option>
+          <option value="ps4">PS4</option>
+          </select>
+          <input type="submit" value="Rechercher">
+        </form>
+      </div>
+    </div>
+  </div>
 
 
 <?php
@@ -46,10 +73,3 @@ if(isset($_POST['pseudo']) && isset($_POST['platform'])){
 
 
 ?>
-
-
-
-
-
-</body>
-</html>
