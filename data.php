@@ -59,9 +59,9 @@ if(isset($_POST['pseudo']) && isset($_POST['platform'])){
     <h2>SOLO</h2>
     <p>TOP 1 : <?php if(isset($json_a['stats']['p2']['top1']['value'])){ echo $json_a['stats']['p2']['top1']['value'];}else{echo '0';}?> </p>
     <h2>DUO</h2>
-    <p>TOP 1 : <?php if(isset($json_a['stats']['p10']['top1']['value'])){ echo $json_a['stats']['p2']['top1']['value'];}else{echo '0';}?> </p>
+    <p>TOP 1 : <?php if(isset($json_a['stats']['p10']['top1']['value'])){ echo $json_a['stats']['p10']['top1']['value'];}else{echo '0';}?> </p>
     <h2>SQUAD</h2>
-    <p>TOP 1 : <?php if(isset($json_a['stats']['p9']['top1']['value'])){ echo $json_a['stats']['p2']['top1']['value'];}else{echo '0';}?> </p>
+    <p>TOP 1 : <?php if(isset($json_a['stats']['p9']['top1']['value'])){ echo $json_a['stats']['p9']['top1']['value'];}else{echo '0';}?> </p>
     <div class="container-contact2-form-btn">
 			<div class="wrap-contact2-form-btn">
 				<div class="contact2-form-bgbtn"></div>
