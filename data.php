@@ -50,16 +50,16 @@ if(isset($_POST['pseudo']) && isset($_POST['platform'])){
 <!--===============================================================================================-->
 </head>
 <body>
-  <h1> <?php echo $json_a['epicUserHandle'];?></h1>
+  <h1> <?php if(isset($json_a['epicUserHandle'])){echo $json_a['epicUserHandle'];}else{echo'Introuvable...';};?></h1>
 
   <h2>SOLO</h2>
-  <p>TOP1 : <?php echo $json_a['stats']['p2']['top1']['value'];?> </p>
+  <p>TOP1 : <?php if(isset($json_a['stats']['p2']['top1']['value'])){ echo $json_a['stats']['p2']['top1']['value'];}else{echo '0';}?> </p>
 
   <h2>DUO</h2>
-  <p>TOP1 : <?php echo $json_a['stats']['p10']['top1']['value'];?> </p>
+  <p>TOP1 : <?php if(isset($json_a['stats']['p10']['top1']['value'])){ echo $json_a['stats']['p2']['top1']['value'];}else{echo '0';}?> </p>
 
   <h2>SQUAD</h2>
-  <p>TOP1 : <?php echo $json_a['stats']['p9']['top1']['value'];?> </p>
+  <p>TOP1 : <?php if(isset($json_a['stats']['p9']['top1']['value'])){ echo $json_a['stats']['p2']['top1']['value'];}else{echo '0';}?> </p>
 </body>
 
 </html>
