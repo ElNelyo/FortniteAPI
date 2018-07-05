@@ -48,7 +48,7 @@
           <div class="container-contact2-form-btn">
 						<div class="wrap-contact2-form-btn">
 							<div class="contact2-form-bgbtn"></div>
-              <input type="submit" class="contact2-form-btn" value="Rechercher">
+              <button class="contact2-form-btn" value="Rechercher">Rechercher</button>
             </div>
           </div>
         </form>

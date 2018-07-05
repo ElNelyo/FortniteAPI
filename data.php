@@ -65,7 +65,7 @@ if(isset($_POST['pseudo']) && isset($_POST['platform'])){
     <div class="container-contact2-form-btn">
 			<div class="wrap-contact2-form-btn">
 				<div class="contact2-form-bgbtn"></div>
-          <button class="contact2-form-btn"><a href="index.php">RETOUR</a></button>
+          <button class="contact2-form-btn"><a href="index.php" style="color:white;">RETOUR</a></button>
         </div>
       </div>
   </form>
