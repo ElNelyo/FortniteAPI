@@ -51,16 +51,17 @@ if(isset($_POST['pseudo']) && isset($_POST['platform'])){
 </head>
 <div class="bg-contact2" style="background-image: url('images/bg-02.jpg');">
 <body>
+
   <h1> <?php if(isset($json_a['epicUserHandle']) ){echo $json_a['epicUserHandle'];}else{echo'Introuvable...';};?></h1>
 
   <h2>SOLO</h2>
   <p>TOP1 : <?php if(isset($json_a['stats']['p2']['top1']['value'])){ echo $json_a['stats']['p2']['top1']['value'];}else{echo '0';}?> </p>
 
   <h2>DUO</h2>
-  <p>TOP1 : <?php if(isset($json_a['stats']['p10']['top1']['value'])){ echo $json_a['stats']['p2']['top1']['value'];}else{echo '0';}?> </p>
+  <p>TOP1 : <?php if(isset($json_a['stats']['p10']['top1']['value'])){ echo $json_a['stats']['p10']['top1']['value'];}else{echo '0';}?> </p>
 
   <h2>SQUAD</h2>
-  <p>TOP1 : <?php if(isset($json_a['stats']['p9']['top1']['value'])){ echo $json_a['stats']['p2']['top1']['value'];}else{echo '0';}?> </p>
+  <p>TOP1 : <?php if(isset($json_a['stats']['p9']['top1']['value'])){ echo $json_a['stats']['p9']['top1']['value'];}else{echo '0';}?> </p>
 </body>
 </div>
 
