@@ -1,3 +1,28 @@
+
+
+
+<!DOCTYPE html>
+<html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+
+  <title>Fornite Webservice </title>
+</head>
+<body>
+
+<h1>Fortnite Webservice</h1>
+<form method="post" action="#">
+<input type="text" placeholder="Pseudo" name="pseudo">
+<select name="platform">
+<option value='xbox'>XBOX</option>
+<option value="pc">PC</option>
+<option value="ps4">PS4</option>
+</select>
+<input type="submit" value="Rechercher">
+</form>
+
+
 <?php
 
 if(isset($_POST['pseudo']) && isset($_POST['platform'])){
@@ -8,36 +33,23 @@ if(isset($_POST['pseudo']) && isset($_POST['platform'])){
   curl_setopt($ch, CURLOPT_HEADER, FALSE);
   curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, FALSE);
   curl_setopt($ch, CURLOPT_HTTPHEADER, array(
-      'TRN-Api-Key: '
+      'TRN-Api-Key: b8822cb4-20ff-4868-a704-46173e32c106'
   ));
   $response = curl_exec($ch);
   curl_close($ch);
   $fp = fopen("stats.json", "w");
   fwrite($fp, $response);
   fclose($fp);
+  echo'</br>';
+  echo'<a href="stats.json">Voir le résultat</a>';
 }
 
 
 ?>
 
 
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Fornite Webservice </title>
-</head>
-<body>
 
-<h1>Fornite Webservice</h1>
-<form method="post" action="#">
-<input type="text" placeholder="Nelyo" name="pseudo">
-<select name="platform">
-<option value='xbox'>XBOX</option>
-<option value="pc">PC</option>
-<option value="ps4">PS4</option>
-</select>
-<input type="submit" value="Rechercher">
-</form>
+
 
 </body>
 </html>
