@@ -35,18 +35,16 @@
   					Saisissez votre pseudo Fortnite
   				</span>
           <div class="wrap-input2 validate-input" data-validate="Name is required">
-            <input type="text" placeholder="" name="pseudo">
+            <input type="text" class="input2" placeholder="" name="pseudo" required="required">
             <span class="focus-input2" data-placeholder="PSEUDO"></span>
           </div>
-          <div class="container-contact2-form-btn">
-						<div class="wrap-contact2-form-btn">
+
               <select name="platform">
               <option value='xbox'>XBOX</option>
               <option value="pc">PC</option>
               <option value="ps4">PS4</option>
               </select>
-            </div>
-          </div>
+
           <div class="container-contact2-form-btn">
 						<div class="wrap-contact2-form-btn">
 							<div class="contact2-form-bgbtn"></div>
