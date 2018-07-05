@@ -49,6 +49,7 @@ if(isset($_POST['pseudo']) && isset($_POST['platform'])){
   <link rel="stylesheet" type="text/css" href="css/main.css">
 <!--===============================================================================================-->
 </head>
+<div class="bg-contact2" style="background-image: url('images/bg-02.jpg');">
 <body>
   <h1> <?php echo $json_a['epicUserHandle'];?></h1>
 
@@ -56,5 +57,6 @@ if(isset($_POST['pseudo']) && isset($_POST['platform'])){
   <p>TOP1 : <?php echo $json_a['epicUserHandle']['stats']['p2']['top1'];?> </p>
 
 </body>
+</div>
 
 </html>
