@@ -32,18 +32,27 @@
   			<div class="wrap-contact2">
         <form method="post" action="#" class="contact2-form validate-form">
           <span class="contact2-form-title">
-  					Fortnite Web Service
-  				</span>
-          <span class="contact2-form-title">
   					Saisissez votre pseudo Fortnite
   				</span>
-          <input type="text" placeholder="Nelyo" name="pseudo">
-          <select name="platform">
-          <option value='xbox'>XBOX</option>
-          <option value="pc">PC</option>
-          <option value="ps4">PS4</option>
-          </select>
-          <input type="submit" value="Rechercher">
+          <div class="wrap-input2 validate-input" data-validate="Name is required">
+            <input type="text" placeholder="" name="pseudo">
+            <span class="focus-input2" data-placeholder="PSEUDO"></span>
+          </div>
+          <div class="container-contact2-form-btn">
+						<div class="wrap-contact2-form-btn">
+              <select name="platform">
+              <option value='xbox'>XBOX</option>
+              <option value="pc">PC</option>
+              <option value="ps4">PS4</option>
+              </select>
+            </div>
+          </div>
+          <div class="container-contact2-form-btn">
+						<div class="wrap-contact2-form-btn">
+							<div class="contact2-form-bgbtn"></div>
+              <input type="submit" class="contact2-form-btn" value="Rechercher">
+            </div>
+          </div>
         </form>
       </div>
     </div>
