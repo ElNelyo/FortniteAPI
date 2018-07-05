@@ -62,6 +62,8 @@ if(isset($_POST['pseudo']) && isset($_POST['platform'])){
 
   <h2>SQUAD</h2>
   <p>TOP1 : <?php if(isset($json_a['stats']['p9']['top1']['value'])){ echo $json_a['stats']['p9']['top1']['value'];}else{echo '0';}?> </p>
+
+
 </body>
 </div>
 
