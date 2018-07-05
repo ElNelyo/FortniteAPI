@@ -30,7 +30,7 @@
   <div class="bg-contact2" style="background-image: url('images/bg-01.jpg');">
   		<div class="container-contact2">
   			<div class="wrap-contact2">
-        <form method="post" action="#" class="contact2-form validate-form">
+        <form method="post" action="data.php" class="contact2-form validate-form">
           <span class="contact2-form-title">
   					Saisissez votre pseudo Fortnite
   				</span>
@@ -61,24 +61,6 @@
 
 <?php
 
-if(isset($_POST['pseudo']) && isset($_POST['platform'])){
-  $ch = curl_init();
-  $link =  "https://api.fortnitetracker.com/v1/profile/".$_POST['platform']."/".$_POST['pseudo'];
-  curl_setopt($ch, CURLOPT_URL,$link);
-  curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
-  curl_setopt($ch, CURLOPT_HEADER, FALSE);
-  curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, FALSE);
-  curl_setopt($ch, CURLOPT_HTTPHEADER, array(
-      'TRN-Api-Key: '
-  ));
-  $response = curl_exec($ch);
-  curl_close($ch);
-  $fp = fopen("stats.json", "w");
-  fwrite($fp, $response);
-  fclose($fp);
-  echo'</br>';
-  echo'<a href="stats.json">Voir le résultat</a>';
-}
 
 
 ?>
