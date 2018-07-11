@@ -24,6 +24,8 @@
   <link rel="stylesheet" type="text/css" href="css/util.css">
   <link rel="stylesheet" type="text/css" href="css/main.css">
 <!--===============================================================================================-->
+
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
 </head>
 <body>
 
@@ -34,8 +36,8 @@
           <span class="contact2-form-title">
   					Saisissez votre pseudo Fortnite
   				</span>
-          <div class="wrap-input2 validate-input" data-validate="Le pseudo est requis">
-            <input type="text" class="input2" placeholder="" name="pseudo" required="required">
+          <div class="wrap-input2 validate-input" id="wrapper" data-validate="Le pseudo est requis">
+            <input type="text" class="input2" id="recherche" placeholder="" name="pseudo" required="required">
             <span class="focus-input2" data-placeholder="PSEUDO"></span>
           </div>
 
@@ -55,3 +57,20 @@
       </div>
     </div>
   </div>
+
+</body>
+<script>
+    $( document ).ready(function() {
+        $("#recherche").on("change",function () {
+           if($("#recherche").val()!= ""){
+               $( ".focus-input2" ).remove();
+           }else{
+               $("#wrapper").append('<span class="focus-input2" data-placeholder="PSEUDO"></span>');
+
+
+
+           }
+        });
+    });
+</script>
+</html>

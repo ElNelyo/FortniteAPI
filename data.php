@@ -62,13 +62,15 @@ if(isset($_POST['pseudo']) && isset($_POST['platform'])){
     <p>TOP 1 : <?php if(isset($json_a['stats']['p10']['top1']['value'])){ echo $json_a['stats']['p10']['top1']['value'];}else{echo '0';}?> </p>
     <h2>SQUAD</h2>
     <p>TOP 1 : <?php if(isset($json_a['stats']['p9']['top1']['value'])){ echo $json_a['stats']['p9']['top1']['value'];}else{echo '0';}?> </p>
-    <div class="container-contact2-form-btn">
-			<div class="wrap-contact2-form-btn">
-				<div class="contact2-form-bgbtn"></div>
-          <button class="contact2-form-btn"><a href="index.php" style="color:white;">RETOUR</a></button>
-        </div>
-      </div>
+
+
   </form>
+      <div class="container-contact2-form-btn">
+          <div class="wrap-contact2-form-btn">
+              <div class="contact2-form-bgbtn"></div>
+              <a href="http://127.0.0.1/FortniteAPI/index.php" style="color:white;"><button class="contact2-form-btn">RETOUR</button></a>
+          </div>
+      </div>
 </div>
 </div>
 </div>
