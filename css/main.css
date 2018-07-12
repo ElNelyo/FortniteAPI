@@ -441,3 +441,9 @@ textarea.input2 + .focus-input2::after {
     opacity: 1;
   }
 }
+
+#lama {
+  display: block;
+  float: right;
+  height: 225px;
+}

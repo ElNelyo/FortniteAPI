@@ -54,6 +54,7 @@ if(isset($_POST['pseudo']) && isset($_POST['platform'])){
   <div class="container-contact2">
   <div class="wrap-contact2">
   <h1> <?php if(isset($json_a['epicUserHandle']) ){echo $json_a['epicUserHandle'];}else{echo'Introuvable...';};?></h1>
+  <div id="lama"><img src="images/lama.png" alt = "lama"></div>
   </br>
   <form class="contact2-form validate-form">
     <h2>SOLO</h2>
@@ -63,7 +64,9 @@ if(isset($_POST['pseudo']) && isset($_POST['platform'])){
     <h2>SQUAD</h2>
     <p>TOP 1 : <?php if(isset($json_a['stats']['p9']['top1']['value'])){ echo $json_a['stats']['p9']['top1']['value'];}else{echo '0';}?> </p>
 
-
+  </br>
+  </br>
+  </br>
   </form>
       <div class="container-contact2-form-btn">
           <div class="wrap-contact2-form-btn">
@@ -74,4 +77,5 @@ if(isset($_POST['pseudo']) && isset($_POST['platform'])){
 </div>
 </div>
 </div>
+</body>
 </html>
